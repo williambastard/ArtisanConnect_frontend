@@ -25,30 +25,46 @@ Pour illustrer la structure "layer-first" en détail, prenons l'exemple d'une ap
 ## 1. Présentation (presentation)
 
 **screens/**: Contient les widgets qui définissent l'interface utilisateur de chaque écran.
+
 **home_screen.dart**: Affiche la liste des restaurants, plats populaires, et options de recherche. Utilise HomeViewModel pour obtenir les données et gérer les interactions utilisateur.
+
 **restaurant_detail_screen.dart**: Affiche les détails d'un restaurant (menu, avis, informations). Utilise RestaurantDetailViewModel.
+
 **cart_screen.dart**: Affiche le panier de l'utilisateur et gère la validation de la commande.
+
 **order_history_screen.dart**: Affiche l'historique des commandes de l'utilisateur.
 
 **widgets/**: Contient les widgets réutilisables dans l'application.
+
 **restaurant_card.dart**: Affiche un restaurant sous forme de carte avec image, nom et note.
+
 **dish_item.dart**: Affiche un plat avec image, nom, description et prix.
+
 **bottom_navigation_bar.dart**: Widget pour la navigation principale de l'application.
 
 **blocs/**: Contient les blocs qui gèrent la logique de présentation et le flux de données.
+
 **home_bloc.dart**: Gère le chargement et l'affichage des restaurants, plats, etc. sur l'écran d'accueil.
-**cart_bloc.dar**t: Gère l'ajout, la suppression et la modification des éléments du panier.
+
+**cart_bloc.dart**: Gère l'ajout, la suppression et la modification des éléments du panier.
+
 
 ## 2. Domaine (domain)
 
 **models/**: Contient les modèles de données métier.
+
 **restaurant.dart**: Définit la classe Restaurant avec ses attributs (nom, cuisine, adresse, note, etc.).
+
 **dish.dart**: Définit la classe Dish (nom, description, prix, image, etc.).
+
 **order.dart**: Définit la classe Order (éléments, prix total, adresse de livraison, etc.).
 
 **repositories/**: Définit les interfaces des repositories.
+
 **restaurant_repository.dart**: Interface pour accéder aux données des restaurants.
+
 **order_repository.dart**: Interface pour gérer les commandes.
+
 **usecases/**: Contient les cas d'utilisation qui implémentent la logique métier.
 **get_restaurants_usecase.dart**: Récupère la liste des restaurants du repository.
 **get_restaurant_details_usecase.dart**: Récupère les détails d'un restaurant spécifique.
