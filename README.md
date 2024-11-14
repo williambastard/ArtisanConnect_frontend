@@ -19,6 +19,7 @@ Nous utiliseront une structure mixte ( layer-first + feature-first )
       - ...
   - shared/
     - ...
+![image](https://github.com/user-attachments/assets/c87818c5-cae2-4a4f-8247-7cc60167f319)
 
 Pour illustrer la structure "layer-first" en détail, prenons l'exemple d'une application de livraison de repas, "Food Delivery App".
 
